@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bazar da Neide</title>
+
+  <!-- ---
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../Images/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #Header
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <!-- Logo da Loja -->
+      <a href="#" class="logo">
+        <img src="../Images/logoBranca.png" width="80" height="80"
+          alt="Foto da logo da loja no tom branco com as siglas 'BN' com flores ao redor">
+      </a>
+
+      <!-- Abrir menu -->
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <!-- Fechar Menu -->
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <!-- Logo da Loja Respons -->
+        <a href="#" class="logo">
+          <img id='logo-resp' src="../Images/logoBranca.png"
+            alt="Foto da logo da loja no tom branco com as siglas 'BN' com flores ao redor">
+        </a>
+
+        <ul class="navbar-list">
+
+          <!-- Barra de Navegação  -->
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sobre.html" class="navbar-link">Sobre</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Catalago.html" class="navbar-link">Catálogo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Games.html" class="navbar-link">Games</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Brinquedos.html" class="navbar-link">Brinquedos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="moveis.html" class="navbar-link">Móveis</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <!-- Cesta Respons -->
+          <li>
+            <button class="nav-action-btn">
+              <a class="nav-action-btn" href="Cesta.html">
+                <ion-icon name="bag-outline" id="icon-bag" aria-hidden="true"></ion-icon>
+                Cesta
+                <data class="nav-action-text" value=""></data>
+              </a>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- 
+        - #Principal
+      -->
+
+    <!-- Banner Principal do Site -->
+    <section class="banner banner-index">
+
+    </section>
+
+    <!-- Coleções da Loja -->
+    <section class="section collection">
+      <div class="container">
+
+        <ul class="collection-list has-scrollbar">
+
+          <li>
+            <h3 class="h4 card-title" id="colecao">Masculino</h3>
+            <div class="collection-card" style="background-image: url('../Images/ModeloMasculino.png')">
+              <a href="../HTML/Catalago.html" class="btn btn-secondary">
+                <span>Veja Tudo</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <h3 class="h4 card-title" id="colecao">Feminino</h3>
+
+            <div class="collection-card" style="background-image: url('../Images/ModeloFeminino.png')">
+              <a href="../HTML/CatalagoFem.html" class="btn btn-secondary">
+                <span>Veja Tudo</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <h3 class="h4 card-title" id="colecao">Infantil</h3>
+
+            <div class="collection-card" style="background-image: url('../Images/ModeloInfantil.png')">
+
+              <a href="../HTML/catalagoInf.html" class="btn btn-secondary">
+                <span>Veja Tudo</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- 
+        - #Produtos
+      -->
+
+    <!-- Produtos novidades depois do banner -->
+    <section class="section product">
+      <div class="container">
+
+        <h2 class="h2 section-title">Produtos</h2>
+
+        <ul class="filter-list">
+
+
+          <!-- Produto 1 -->
+
+          <ul class="product-list">
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/fem4.png" loading="lazy" alt="imagem de um conjunto de short e blusa - TAM: M"
+                    class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="CatalagoFem.html" class="card-cat-link">Feminino</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="CatalagoFem.html">Conjunto de blusa e short - TAM: M </a>
+                  </h3>
+
+                  <data class="card-price" value="20.00">R$20,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 2 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/brinquedo2.png" loading="lazy" alt="Mola maluca colorida" class="image-contain">
+
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="Brinquedos.html" class="card-cat-link">Brinquedos<a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="Brinquedos.html">Mola maluca colorida</a>
+                  </h3>
+
+                  <data class="card-price" value="5.00">R$5,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 3 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/sapInfan2.png" loading="lazy" alt="Chinelo Havaianas infantil - TAM: 23/24"
+                    class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="catalagoInf.html" class="card-cat-link">Infantil</a>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="catalagoInf.html">Chinelo Havaianas infantil - TAM: 23-24</a>
+                  </h3>
+
+                  <data class="card-price" value="5.00">R$5,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 4 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/game5.png" loading="lazy" alt="Jogo Horizon Forbidden West PS4"
+                    class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="Catalago.html" class="card-cat-link">Games</a>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="Games.html">Jogo Horizon Forbidden West PS4 </a>
+                  </h3>
+
+                  <data class="card-price" value="30.00">R$30,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 5 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/movel7.png" loading="lazy"
+                    alt=" Ventilador de Mesa Mallory TS40+ - Voltagem: 110V" class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="moveis.html" class="card-cat-link">Móveis</a>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="moveis.html"> Ventilador de Mesa Mallory TS40+ - Voltagem: 110V</a>
+                  </h3>
+
+                  <data class="card-price" value="80.00">R$80,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 6 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/roupMasc5.png" loading="lazy" alt="Kit 2 cuecas masculinas Calvin Klein"
+                    class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="Catalago.html" class="card-cat-link">Masculino</a>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="Catalago.html">Kit 2 cuecas masculinas Calvin Klein</a>
+                  </h3>
+
+                  <data class="card-price" value="10.00">R$10,00</data>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 7 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/roupIfan9.png" loading="lazy" alt="Camisa Polo Kyly Infantil - TAM: 4"
+                    class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="catalagoInf.html" class="card-cat-link">Infantil</a>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="catalagoInf.html">Camisa Polo Kyly Infantil - TAM: 4</a>
+                  </h3>
+
+                  <data class="card-price" value="10.00">R$10,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 8 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/fem10.png" loading="lazy" alt="Biquiní C/Bojo - TAM: G" class="image-contain">
+                </figure>
+
+                <!-- Descrição do Produto -->
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="CatalagoFem.html" class="card-cat-link">Feminino</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="CatalagoFem.html">Biquiní C/Bojo - TAM: G</a>
+                  </h3>
+
+                  <data class="card-price" value="15.00">R$15,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+      </div>
+    </section>
+
+    <!-- 
+        - #Promoções do Bazar
+      -->
+
+    <section class="section cta">
+      <div class="container">
+
+        <ul class="cta-list">
+
+          <li>
+            <div class="cta-card" style="background-image: url('../Images/RoupasBanner.jpg')">
+              <p class="card-subtitle">Preços Únicos</p>
+
+              <h3 class="h2 card-title">Bem-vindo a um Mundo Onde Sustentabilidade Encontra Estilo.</h3>
+
+              <a href="Catalago.html" class="btn btn-link">
+                <span>Compre Agora</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </li>
+
+          <!-- Parte do Site Sobre Games -->
+          <li>
+            <div class="cta-card" style="background-image: url('../Images/BannerGames.jpg')">
+              <p class="card-subtitle">Games Em Geral</p>
+
+              <h3 class="h2 card-title">Games de PS4 e PS5 </h3>
+
+              <a href="Games.html" class="btn btn-link">
+                <span>Compre Agora</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- 
+        - #Espaço Esporte
+      -->
+
+    <section class="section special">
+      <div class="container">
+
+        <div class="special-banner" style="background-image: url('../Images/sportSalmao.png')">
+          <h2 class="h3 banner-title">VARIEDADES!</h2>
+
+          <a href="Catalago.html" class="btn btn-link">
+            <span>Explore Tudo</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+        </div>
+
+        <div class="special-product">
+
+          <h2 class="h2 section-title">
+            <span class="text">Espaço Esportivo</span>
+
+            <span class="line"></span>
+          </h2>
+
+
+          <ul class="has-scrollbar">
+
+            <!-- Produto 1 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/sport2.png" loading="lazy" alt="Camisa esportiva do Flamengo masculina - TAM: G "
+                    class="image-contain">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="Catalago.html" class="card-cat-link">Masculino</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="Catalago.html">Camisa esportiva do Flamengo masculina - TAM: G </a>
+                  </h3>
+
+                  <data class="card-price" value="10.00">R$10,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 2 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/sapSport1.png" loading="lazy" alt="Chuteira Umbro Burn Campo masclino - TAM: 40"
+                    class="image-contain">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+
+                    <a href="Catalago.html" class="card-cat-link">Masculino</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="Catalago.html">Chuteira Umbro Burn Campo masclino - TAM: 40</a>
+                  </h3>
+
+                  <data class="card-price" value="25.00">R$25,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Produto 3 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/sport3.png" loading="lazy" alt="Camisa eportiva do São Paulo masculina - TAM: P"
+                    class="image-contain">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="Catalago.html" class="card-cat-link">Masculino</a>
+
+                    <h3 class="h3 card-title">
+                      <a href="Catalago.html">Camisa eportiva do São Paulo masculina - TAM: P</a>
+                    </h3>
+
+                    <data class="card-price" value="10.00">R$10,00</data>
+
+                  </div>
+
+                </div>
+
+            </li>
+
+            <!-- Produto 4 -->
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="../Images/sport5.png" loading="lazy" alt="Camisa esportiva do Flamengo feminina - TAM: P"
+                    class="image-contain">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+
+                    <a href="CatalagoFem.html" class="card-cat-link">Feminino</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="CatalagoFem.html">Camisa esportiva do Flamengo feminina - TAM: P</a>
+                  </h3>
+
+                  <data class="card-price" value="5.00">R$5,00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Localização</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location-outline"></ion-icon>
+                <a href="https://www.google.com.br/maps/place/Pra%C3%A7a+Cruz+da+Esperan%C3%A7a,+94+-+Vila+Baruel,+S%C3%A3o+Paulo+-+SP,+02522-040/@-23.5033994,-46.6593209,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef7ec1d6be52d:0x637897ce381859d3!8m2!3d-23.5034043!4d-46.656746!16s%2Fg%2F11c1yt95f2?entry=ttu"
+                  class="footer-link-text" target="_blank"> Praça Cruz Da Esperança, 94, Vila Baruel</a>
+              </address>
+            </li>
+          </ul>
+
+          <!-- Contatos da Loja -->
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contatos:</p>
+            </li>
+            <li>
+              <a href="tel:+5511952435151" class="footer-link" target="_blank">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+55 (11) 95243-5151</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:bazar.da.neide1@gmail.com" class="footer-link" target="_blank">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">bazar.da.neide1@gmail.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/bazar.da_neide/" class="footer-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="footer-link-text">Instagram</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Horários de Funcionamento</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Segunda à Sábado:</th>
+
+                  <td class="table-data">09:00AM - 18:30PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Domingo:</th>
+
+                  <td class="table-data">Fechado</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">Bazar da Neide</a>. Todos os Direitos Reservados
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- 
+    - #Ir Para Cima
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <!-- 
+    Link de JavaScript
+  -->
+  <script src="../JS/script.js" type="module"></script>
+
+  <!-- 
+    - icone link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bazar da Neide</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../Images/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../CSS/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #Header
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <!-- Logo da Loja -->
+      <a href="home.html" class="logo">
+        <img src="../Images/logoBranca.png" width="80" height="80"
+          alt="Foto da logo da loja no tom branco com as siglas 'BN' com flores ao redor">
+      </a>
+
+      <!-- Abrir menu -->
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <!-- Fechar Menu -->
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <!-- Logo da Loja Respons -->
+        <a href="#" class="logo">
+          <img src="../Images/logoBranca.png"
+            alt="Foto da logo da loja no tom branco com as siglas 'BN' com flores ao redor">
+        </a>
+
+        <ul class="navbar-list">
+
+          <!-- Barra de Navegação  -->
+          <li class="navbar-item">
+            <a href="home.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="sobre.html" class="navbar-link">Sobre</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Catalago.html" class="navbar-link">Catálogo</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Games.html" class="navbar-link">Games</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Brinquedos.html" class="navbar-link">Brinquedos</a>
+          </li>
+          <li class="navbar-item">
+            <a href="moveis.html" class="navbar-link">Móveis</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <!-- Cesta Respons -->
+          <li>
+            <button class="nav-action-btn">
+              <a class="nav-action-btn" href="Cesta.html">
+                <ion-icon name="bag-outline" id="icon-bag" aria-hidden="true"></ion-icon>
+                Cesta
+                <data class="nav-action-text" value=""></data>
+              </a>
+            </button>
+          </li>
+      </nav>
+
+    </div>
+  </header>
+  <!-- 
+        - #CTA
+      -->
+
+  <section class="section cta">
+    <div class="container">
+
+      <ul class="cta-list">
+
+        <li>
+          <div class="cta-card" style="background-image: url('../Images/Brinquedos.jpg')">
+            <p class="card-subtitle">Brinquedos Com Preço Baixo</p>
+
+            <h3 class="h2 card-title">Desperte a Imaginação da sua Criança</h3>
+
+            <a href="Brinquedos.html" class="btn btn-link">
+              <span>Compre Agora</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div class="cta-card" style="background-image: url('../Images/Brinquedos2.jpg')">
+            <p class="card-subtitle">Brinquedos em Geral</p>
+
+            <h3 class="h2 card-title">Briquedos para as Crianças de Todas as Idades</h3>
+
+            <a href="Brinquedos.html" class="btn btn-link">
+              <span>Compre Agora</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- 
+          - #PRODUCT
+        -->
+  <section class="section product">
+    <div class="container">
+      <ul class="product-list">
+
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo1.png" loading="lazy" alt="NERF N-Strike Elite Strongarm Blaster"
+                class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">NERF N-Strike Elite Strongarm Blaster</a>
+              </h3>
+
+              <data class="card-price" value="10.00">R$10,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo2.png" loading="lazy" alt="Mola maluca colorida" class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Mola maluca colorida</a>
+              </h3>
+
+              <data class="card-price" value="5.00">R$5,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo3.png" loading="lazy" alt="Boneca Baby Alive" class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Boneca Baby Alive</a>
+              </h3>
+
+              <data class="card-price" value="50.00">R$50,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo4.png" loading="lazy" alt="Kit de bichinhos selvagens 15 Unidades"
+                class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Kit de bichinhos selvagens 15 Unidades</a>
+              </h3>
+
+              <data class="card-price" value="25.00">R$25,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo5.png" loading="lazy" alt="Cachorrinho de pelúcia que fala"
+                class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Cachorrinho de pelúcia que fala</a>
+              </h3>
+
+              <data class="card-price" value="20.00">R$20,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo6.png" loading="lazy" alt="Robô que fala e canta" class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Robô que fala e canta</a>
+              </h3>
+
+              <data class="card-price" value="20.00">R$20,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo7.png" loading="lazy" alt="Brinquedo de tiro ao alvo" class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Brinquedo de tiro ao alvo</a>
+              </h3>
+
+              <data class="card-price" value="10.00">R$10,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo8.png" loading="lazy" alt="Triciclo patinete de unicórnio"
+                class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Triciclo patinete de unicórnio</a>
+              </h3>
+
+              <data class="card-price" value="50.00">R$50,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo9.png" loading="lazy" alt="Boneca da Rapunzel" class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Boneca da Rapunzel</a>
+              </h3>
+
+              <data class="card-price" value="30.00">R$30,00</data>
+
+            </div>
+
+          </div>
+        </li>
+        <li class="product-item">
+          <div class="product-card" tabindex="0">
+
+            <figure class="card-banner">
+              <img src="../Images/brinquedo10.png" loading="lazy" alt="Girafa de pelúcia" class="image-contain">
+
+
+              <ul class="card-action-list">
+
+                <li class="card-action-item">
+                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                    <ion-icon name="cart-outline" class="cart"></ion-icon>
+                  </button>
+
+                  <div class="card-action-tooltip" id="card-label-1">Adicione ao Carrinho</div>
+                </li>
+              </ul>
+            </figure>
+
+            <div class="card-content">
+
+              <div class="card-cat">
+                <a href="Brinquedos.html" class="card-cat-link">Brinquedos</a>
+
+              </div>
+
+              <h3 class="h3 card-title">
+                <a href="Brinquedos.html">Girafa de pelúcia</a>
+              </h3>
+
+              <data class="card-price" value="10.00">R$10,00</data>
+
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Localização</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location-outline"></ion-icon>
+                <a href="https://www.google.com.br/maps/place/Pra%C3%A7a+Cruz+da+Esperan%C3%A7a,+94+-+Vila+Baruel,+S%C3%A3o+Paulo+-+SP,+02522-040/@-23.5033994,-46.6593209,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef7ec1d6be52d:0x637897ce381859d3!8m2!3d-23.5034043!4d-46.656746!16s%2Fg%2F11c1yt95f2?entry=ttu"
+                  class="footer-link-text" target="_blank"> Praça Cruz Da Esperança, 94, Vila Baruel</a>
+              </address>
+            </li>
+          </ul>
+
+          <!-- Contatos da Loja -->
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contatos:</p>
+            </li>
+            <li>
+              <a href="tel:+5511952435151" class="footer-link" target="_blank">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+55 (11) 95243-5151</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:bazar.da.neide1@gmail.com" class="footer-link" target="_blank">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">bazar.da.neide1@gmail.com</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/bazar.da_neide/" class="footer-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="footer-link-text">Instagram</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Horários de Funcionamento</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Segunda à Sábado:</th>
+
+                  <td class="table-data">09:00AM - 18:30PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Domingo:</th>
+
+                  <td class="table-data">Fechado</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href="#" class="copyright-link">Bazar da Neide</a>. Todos os Direitos Reservados
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../JS/script.js" type="module"></script>
+
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
